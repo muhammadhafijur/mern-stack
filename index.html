@@ -12,14 +12,13 @@
     <h1 class="display-1 bg-success text-center">Javascript ES6 Cheat Sheet</h1>
 
 
-    <section class="container">
-        <div class="row">
-            <div class="col-lg-4 text-dark ">
+    <section class="cards">
+            <div class="card">
                 <h2>Arrow Function</h2>
                 <h4>const sum = (a, b) => a + b</h4>
                 <h4>console.log(sum(2, 6)) // prints 8</h4>
             </div>
-            <div class="col-lg-4 text-dark ">
+            <div class="card">
                 <h2>Object Property Assignment</h2>
                 <h4>const a = 2</h4>
                 <h4>const b = 5</h4>
@@ -29,7 +28,7 @@
                 <h4>console.log(obj)</h4>
                 <h4>// prints = { a: 2, b: 5 }</h4>
             </div>
-            <div class="col-lg-4 text-dark ">
+            <div class="card">
                 <h2>Object Function Assignment</h2>
                 <h4>const obj = {</h4>
                 <h4>a: 5,</h4>
@@ -39,7 +38,129 @@
                 <h4>}</h4>
                 <h4>obj.b() // prints "b"</h4>
             </div>
-        </div>
+            <div class="card">
+                <h2>Default Parameters</h2>
+                <h4>function print(a = 5) {</h4>
+                <h4>&nbsp; console.log(a)</h4>
+                <h4>}</h4>
+                <h4>print() // prints 5</h4>
+                <h4>print(22) // prints 22</h4>
+            </div>
+            <div class="card">
+                <h2>Let Scope</h2>
+                <h4>let a = 3</h4>
+                <h4>&nbsp; if (true) {</h4>
+                <h4>let a = 5</h4>
+                <h4>console.log(a) //prints 5</h4>
+                <h4>}</h4>
+                <h4>obj.b() // prints "b"</h4>
+            </div>
+            <div class="card">
+                <h2>Object Assign</h2>
+                <h4>const obj1 = {a: 1}</h4>
+                <h4>const obj2 = {b: 2}</h4>
+                <h4>const obj3 = Object.assign({},</h4>
+                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
+                <h4>console.log(obj3)</h4>
+                <h4>// { a: 1, b: 2 }</h4>
+            </div>
+            <div class="card">
+                <h2>Object Entries</h2>
+                <h4>const obj = {</h4>
+                <h4>&nbsp; firstName: 'FirstName'</h4>
+                <h4>&nbsp; lastName: 'LastName'</h4>
+                <h4>&nbsp; age: 24</h4>
+                <h4>&nbsp; country: Bangladesh</h4>
+                <h4>};</h4>
+                <h4>const entries = Object.entries(obj);</h4>
+                <h4>/* returns an array of [key, value]</h4>
+                <h4>&nbsp; pairs of the object passed */</h4>
+                <h4>console.log(entries)</h4>
+                <h4>/* prints</h4>
+                <h4>[</h4>
+                <h4>['firstName', 'FirstName']</h4>
+                <h4>['lastName', 'LastName']</h4>
+                <h4>['age', 24]</h4>
+                <h4>['country', 'Bangladesh']</h4>
+                <h4>]; */</h4>
+            </div>
+            <div class="card">
+                <h2>Const</h2>
+                <h4>// can be assigned only once</h4>
+                <h4>const a = 55</h4>
+                <h4>a = 44 // throws an error</h4>
+            </div>
+            <div class="card">
+                <h2>Promises with finally</h2>
+                <h4>promise</h4>
+                <h4>&nbsp; .then((result) => { ... })</h4>
+                <h4>&nbsp; .catch((error) => { ... })</h4>
+                <h4>&nbsp; .finally(() => { /* logic</h4>
+                <h4>&nbsp; .finally(() => { /* logic</h4>
+                <h4>independent of success/error */ })</h4>
+                <h4>/* The handler is called when the</h4>
+                <h4>promise is fulfilled or rejected. */</h4>
+            </div>
+            <div class="card">
+                <h2>Multiline string</h2>
+                <h4>console.log(`</h4>
+                <h4>&nbsp; This is a</h4>
+                <h4>&nbsp; multiline string</h4>
+                <h4>`)</h4>
+            </div>
+            <div class="card">
+                <h2>Template String</h2>
+                <h4>const name = 'World'</h4>
+                <h4>const message = `Hello ${name}`</h4>
+                <h4>console.log(message)</h4>
+                <h4>// prints "Hello World"</h4>
+            </div>
+            <div class="card">
+                <h2>Spread Operator</h2>
+                <h4>const a = {</h4>
+                <h4>&nbsp; firstName: "FirstName",</h4>
+                <h4>&nbsp; lastName: "LastName1",</h4>
+                <h4>}</h4>
+                <h4>const b = {</h4>
+                <h4>&nbsp; ...a,</h4>
+                <h4>&nbsp; lastName: "LastName2",</h4>
+                <h4>&nbsp; canWork: true,</h4>
+                <h4>}</h4>
+                <h4>console.log(a)</h4>
+                <h4>// {firstName: "FirstName", lastName: "LastName1"}</h4>
+                <h4>console.log(b)</h4>
+                <h4>/* {firstName: "FirstName", lastName: "LastName2",</h4>
+                <h4>canWork: true} */</h4>
+                <h4>/* great for modifying objects without</h4>
+                <h4>side effects/affecting the original */</h4>
+            </div>
+            <div class="card">
+                <h2>Object Assign</h2>
+                <h4>const obj1 = {a: 1}</h4>
+                <h4>const obj2 = {b: 2}</h4>
+                <h4>const obj3 = Object.assign({},</h4>
+                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
+                <h4>console.log(obj3)</h4>
+                <h4>// { a: 1, b: 2 }</h4>
+            </div>
+            <div class="card">
+                <h2>Object Assign</h2>
+                <h4>const obj1 = {a: 1}</h4>
+                <h4>const obj2 = {b: 2}</h4>
+                <h4>const obj3 = Object.assign({},</h4>
+                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
+                <h4>console.log(obj3)</h4>
+                <h4>// { a: 1, b: 2 }</h4>
+            </div>
+            <div class="card">
+                <h2>Object Assign</h2>
+                <h4>const obj1 = {a: 1}</h4>
+                <h4>const obj2 = {b: 2}</h4>
+                <h4>const obj3 = Object.assign({},</h4>
+                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
+                <h4>console.log(obj3)</h4>
+                <h4>// { a: 1, b: 2 }</h4>
+            </div>
     </section>
 
 
