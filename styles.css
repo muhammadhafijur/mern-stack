@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+::selection{
+    background-color: orange;
+    color: black;
 }
 
 a{
@@ -10,7 +16,7 @@ a{
 header{
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #282C34;
 }
@@ -44,6 +50,14 @@ header{
     top: 4%;
     left: 40%;
 }
+.heading{
+    margin: 0 auto;
+    color: orange;
+}
+.heading h1{
+    font-size: 70px;
+    font-weight: 600;
+}
 
 @-webkit-keyframes rotating {
     from{
@@ -67,7 +81,7 @@ header{
 }
 .card{
     /* height: 500px; */
-    background-color: teal;
+    background-color: #282C34;
     border: none;
     padding: 30px;
 }
@@ -75,9 +89,15 @@ header{
 
 .card h2{
     background-color: #373737;
-    color: #FFF;
+    color: #61DAFB;
     text-align: center;
     margin-bottom: 20px;
     padding: 10px 0px;
+    font-weight: 400;
+}
+.card h4{
+    /* color: orange; */
+    color: #2ecc71;
+    font-weight: 600;
 }
 
