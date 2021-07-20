@@ -102,3 +102,23 @@ header{
     font-weight: 600;
 }
 
+
+
+
+
+@media only screen and (max-width: 688px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 440px;
+        margin-bottom: 60px;
+    }
+    .heading{
+        text-align: center;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        }
+}
+
