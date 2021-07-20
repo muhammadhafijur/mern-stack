@@ -39,6 +39,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 20px;
 }
 .logo a{
     font-size: 70px;

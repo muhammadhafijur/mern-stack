@@ -129,6 +129,11 @@
                 <h4>// prints "Hello World"</h4>
             </div>
             <div class="card">
+                <h2>Exponent Operator</h2>
+                <h4>const byte = 2 ** 8</h4>
+                <h4>// Same as: Math.pow(2, 8)</h4>
+            </div>
+            <div class="card">
                 <h2>Spread Operator</h2>
                 <h4>const a = [ 1, 2 ]</h4>
                 <h4>const b = [ 3, 4 ]</h4>
@@ -155,31 +160,58 @@
                 <h4>side effects/affecting the original */</h4>
             </div>
             <div class="card">
-                <h2>Object Assign</h2>
-                <h4>const obj1 = {a: 1}</h4>
-                <h4>const obj2 = {b: 2}</h4>
-                <h4>const obj3 = Object.assign({},</h4>
-                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
-                <h4>console.log(obj3)</h4>
-                <h4>// { a: 1, b: 2 }</h4>
+                <h2>String includes()</h2>
+                <h4>console.log('apple'.includes('p1'))</h4>
+                <h4>// prints true</h4>
+                <h4>console.log('apple'.includes('tt'))</h4>
+                <h4>// prints false</h4>
             </div>
             <div class="card">
-                <h2>Object Assign</h2>
-                <h4>const obj1 = {a: 1}</h4>
-                <h4>const obj2 = {b: 2}</h4>
-                <h4>const obj3 = Object.assign({},</h4>
-                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
-                <h4>console.log(obj3)</h4>
-                <h4>// { a: 1, b: 2 }</h4>
+                <h2>String startsWith()</h2>
+                <h4>console.log('apple'.startsWith('ap'))</h4>
+                <h4>// prints true</h4>
+                <h4>console.log('apple'.startsWith('bb'))</h4>
+                <h4>// prints false</h4>
             </div>
             <div class="card">
-                <h2>Object Assign</h2>
-                <h4>const obj1 = {a: 1}</h4>
-                <h4>const obj2 = {b: 2}</h4>
-                <h4>const obj3 = Object.assign({},</h4>
-                <h4>&nbsp; &nbsp; obj1, obj2)</h4>
-                <h4>console.log(obj3)</h4>
-                <h4>// { a: 1, b: 2 }</h4>
+                <h2>String repeat</h2>
+                <h4>console.log('ab'.repeat(3))</h4>
+                <h4>// prints "ababab"</h4>
+            </div>
+            <div class="card">
+                <h2>Destructuring Array</h2>
+                <h4>let [a, b] = [3, 7]</h4>
+                <h4>console.log(a); // 3</h4>
+                <h4>console.log(b); // 7</h4>
+            </div>
+            <div class="card">
+                <h2>Destructuring Object</h2>
+                <h4>let obj = {</h4>
+                <h4>&nbsp; a: 55,</h4>
+                <h4>&nbsp; b: 44</h4>
+                <h4>};</h4>
+                <h4>let { a, b } = obj;</h4>
+                <h4>console.log(a); // 55</h4>
+                <h4>console.log(b); // 44</h4>
+            </div>
+            <div class="card">
+                <h2>Destructuring Nested Object</h2>
+                <h4>const Person = {</h4>
+                <h4>&nbsp; name: "Rahim Rahman",</h4>
+                <h4>&nbsp; age: 24,</h4>
+                <h4>&nbsp; sex: "male",</h4>
+                <h4>&nbsp; materialStatus: "single",</h4>
+                <h4>&nbsp; address: {</h4>
+                <h4>&nbsp;&nbsp; country: "Bangladesh",</h4>
+                <h4>&nbsp;&nbsp; city: "Rajshahi",</h4>
+                <h4>&nbsp;&nbsp; thana: "Boalia",</h4>
+                <h4>&nbsp;&nbsp; postal: 6100</h4>
+                <h4>&nbsp;&nbsp; },</h4>
+                <h4>&nbsp; };</h4>
+                <h4>&nbsp; const { address : { city, postal }, name } = Person;</h4>
+                <h4>&nbsp; console.log(name, city, postal)</h4>
+                <h4>&nbsp; // Rahim Rahman Rajshahi 6100</h4>
+                <h4>&nbsp; console.log(city) // ReferenceError</h4>
             </div>
     </section>
 
