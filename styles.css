@@ -102,6 +102,20 @@ header{
     font-weight: 600;
 }
 
+.reminder{
+    width: 90%;
+    margin: 40px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.reminder p{
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    padding: 5%;
+    text-align: justify;
+    /* letter-spacing: 2px; */
+}
 
 
 
