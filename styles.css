@@ -134,7 +134,9 @@ header{
 }
 
 
+/* Responsive Design */
 
+/* Mobile */
 @media only screen and (max-width: 688px) {
     header{
         display: flex;
