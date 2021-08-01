@@ -107,6 +107,11 @@ header{
     margin: 40px auto;
     background-color: #F5F5F5;
     border-radius: 10px;
+    background-image: url(./dryplantsky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 600px;
 }
 .reminder p{
     font-size: 40px;
@@ -117,6 +122,16 @@ header{
     /* letter-spacing: 2px; */
 }
 
+
+
+/* Vanilla */
+.vanilla-js{
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #282C34;
+}
 
 
 
