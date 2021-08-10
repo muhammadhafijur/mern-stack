@@ -13,12 +13,12 @@
 a{
     text-decoration: none;
 }
-h2{
+/* h2{
     font-size: 33px;
 }
 h4{
     font-size: 27px;
-}
+} */
 
 header{
     height: 200px;
@@ -107,6 +107,7 @@ header{
     /* color: orange; */
     color: #2ecc71;
     font-weight: 600;
+    font-size: 25px;
 }
 
 /* Vanilla */
@@ -148,6 +149,7 @@ footer{
 }
 footer h5{
     font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -161,6 +163,7 @@ footer h5{
         padding-bottom: 340px;
         margin-bottom: 60px;
     }
+    
     .heading{
         text-align: center;
     }
