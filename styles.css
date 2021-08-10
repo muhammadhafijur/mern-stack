@@ -102,16 +102,23 @@ header{
     font-weight: 600;
 }
 
+/* Vanilla */
+.vanilla-js{
+    margin-top: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #282C34;
+}
+
+/* reminder */
+
 .reminder{
     width: 90%;
     margin: 40px auto;
-    background-color: #F5F5F5;
+    background-color: #F3F5F9;
     border-radius: 10px;
-    background-image: url(./dryplantsky.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-bottom: 600px;
 }
 .reminder p{
     font-size: 40px;
@@ -123,14 +130,11 @@ header{
 }
 
 
-
-/* Vanilla */
-.vanilla-js{
-    height: 200px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #282C34;
+footer{
+    text-align: center;
+}
+footer h5{
+    font-weight: bold;
 }
 
 
