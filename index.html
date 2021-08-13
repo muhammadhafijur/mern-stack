@@ -300,7 +300,18 @@ console.log(entries)
   </section>
 
   <section class="cards">
+    <div class="card">
+      <h2>Create and Add Element</h2>
+      <pre class="prettyprint">
+//create element
+const li = document.createElement('li');
+li.innerText = 'your text';
+// where to add the element
+const ul = document.getElementById('ul-id');
+ul.appendChild(li);
 
+</pre>
+    </div>
   </section>
 
 
