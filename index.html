@@ -90,23 +90,25 @@ obj.b() // prints "b"
     </div>
     <div class="card">
       <h2>Object Entries</h2>
-      <h4>const obj = {</h4>
-      <h4>&nbsp; firstName: 'FirstName'</h4>
-      <h4>&nbsp; lastName: 'LastName'</h4>
-      <h4>&nbsp; age: 24</h4>
-      <h4>&nbsp; country: Bangladesh</h4>
-      <h4>};</h4>
-      <h4>const entries = Object.entries(obj);</h4>
-      <h4>/* returns an array of [key, value]</h4>
-      <h4>&nbsp; pairs of the object passed */</h4>
-      <h4>console.log(entries)</h4>
-      <h4>/* prints</h4>
-      <h4>[</h4>
-      <h4>['firstName', 'FirstName']</h4>
-      <h4>['lastName', 'LastName']</h4>
-      <h4>['age', 24]</h4>
-      <h4>['country', 'Bangladesh']</h4>
-      <h4>]; */</h4>
+      <pre class="prettyprint">
+const obj = {
+  firstName: 'FirstName'
+  lastName: 'LastName'
+  age: 24
+  country: Bangladesh
+};
+const entries = Object.entries(obj);
+/* returns an array of [key, value]
+  pairs of the object passed */
+console.log(entries)
+/* prints
+[
+['firstName', 'FirstName']
+['lastName', 'LastName']
+['age', 24]
+['country', 'Bangladesh']
+]; */
+        </pre>
     </div>
     <div class="card">
       <h2>Const</h2>
