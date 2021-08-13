@@ -62,14 +62,7 @@ pre.prettyprint,
 code.prettyprint {
   font-family: "Droid Sans Mono", "CPMono_v07 Bold", "Droid Sans";
   font-weight: bold;
-  font-size: 1.2rem;
-  /* background-color: #0f0f0f; */
-  /* -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px; */
-  /* border-radius: 8px; */
+  font-size: 1.6rem;
 } /*  background is black (well, just a tad less dark )  */
 
 pre.prettyprint {
