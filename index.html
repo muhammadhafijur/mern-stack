@@ -35,7 +35,8 @@
       <pre class="prettyprint">
 const sum = (a, b) => a + b
 console.log(sum(2, 6)) // prints 8
-      </pre>
+</pre>
+
 
     </div>
     <div class="card">
@@ -49,6 +50,7 @@ const obj = { a, b }
 console.log(obj)
 // prints = { a: 2, b: 5 }
 </pre>
+      </pre>
     </div>
     <div class="card">
       <h2>Object Function Assignment</h2>
@@ -60,33 +62,40 @@ const obj = {
   }
   }
 obj.b() // prints "b"
-        </pre>
+  </pre>
+      </pre>
     </div>
     <div class="card">
       <h2>Default Parameters</h2>
-      <h4>function print(a = 5) {</h4>
-      <h4>&nbsp; console.log(a)</h4>
-      <h4>}</h4>
-      <h4>print() // prints 5</h4>
-      <h4>print(22) // prints 22</h4>
+      <pre class="prettyprint">
+function print(a = 5) {
+&nbsp; console.log(a)
+}
+print() // prints 5
+print(22) // prints 22
+    </pre>
     </div>
     <div class="card">
       <h2>Let Scope</h2>
-      <h4>let a = 3</h4>
-      <h4>&nbsp; if (true) {</h4>
-      <h4>let a = 5</h4>
-      <h4>console.log(a) //prints 5</h4>
-      <h4>}</h4>
-      <h4>obj.b() // prints "b"</h4>
+      <pre class="prettyprint">
+let a = 3
+&nbsp; if (true) {
+let a = 5
+console.log(a) //prints 5
+}
+obj.b() // prints "b"
+    </pre>
     </div>
     <div class="card">
       <h2>Object Assign</h2>
-      <h4>const obj1 = {a: 1}</h4>
-      <h4>const obj2 = {b: 2}</h4>
-      <h4>const obj3 = Object.assign({},</h4>
-      <h4>&nbsp; &nbsp; obj1, obj2)</h4>
-      <h4>console.log(obj3)</h4>
-      <h4>// { a: 1, b: 2 }</h4>
+      <pre class="prettyprint">
+const obj1 = {a: 1}
+const obj2 = {b: 2}
+const obj3 = Object.assign({},
+&nbsp; &nbsp; obj1, obj2)
+console.log(obj3)
+// { a: 1, b: 2 }
+    </pre>
     </div>
     <div class="card">
       <h2>Object Entries</h2>
@@ -108,190 +117,222 @@ console.log(entries)
 ['age', 24]
 ['country', 'Bangladesh']
 ]; */
-        </pre>
+  </pre>
+      </pre>
     </div>
     <div class="card">
       <h2>Const</h2>
-      <h4>// can be assigned only once</h4>
-      <h4>const a = 55</h4>
-      <h4>a = 44 // throws an error</h4>
+      <pre class="prettyprint">
+// can be assigned only once
+const a = 55
+a = 44 // throws an error
+    </pre>
     </div>
     <div class="card">
       <h2>Promises with finally</h2>
-      <h4>promise</h4>
-      <h4>&nbsp; .then((result) => { ... })</h4>
-      <h4>&nbsp; .catch((error) => { ... })</h4>
-      <h4>&nbsp; .finally(() => { /* logic</h4>
-      <h4>&nbsp; .finally(() => { /* logic</h4>
-      <h4>independent of success/error */ })</h4>
-      <h4>/* The handler is called when the</h4>
-      <h4>promise is fulfilled or rejected. */</h4>
+      <pre class="prettyprint">
+promise
+&nbsp; .then((result) => { ... })
+&nbsp; .catch((error) => { ... })
+&nbsp; .finally(() => { /* logic
+&nbsp; .finally(() => { /* logic
+independent of success/error */ })
+/* The handler is called when the
+promise is fulfilled or rejected. */
+    </pre>
     </div>
     <div class="card">
       <h2>Multiline string</h2>
-      <h4>console.log(`</h4>
-      <h4>&nbsp; This is a</h4>
-      <h4>&nbsp; multiline string</h4>
-      <h4>`)</h4>
+      <pre class="prettyprint">
+console.log(`
+&nbsp; This is a
+&nbsp; multiline string
+`)
+    </pre>
     </div>
     <div class="card">
       <h2>Template String</h2>
-      <h4>const name = 'World'</h4>
-      <h4>const message = `Hello ${name}`</h4>
-      <h4>console.log(message)</h4>
-      <h4>// prints "Hello World"</h4>
+      <pre class="prettyprint">
+const name = 'World'
+const message = `Hello ${name}`
+console.log(message)
+// prints "Hello World"
+    </pre>
     </div>
     <div class="card">
       <h2>Exponent Operator</h2>
-      <h4>const byte = 2 ** 8</h4>
-      <h4>// Same as: Math.pow(2, 8)</h4>
+      <pre class="prettyprint">
+const byte = 2 ** 8
+// Same as: Math.pow(2, 8)
+    </pre>
     </div>
     <div class="card">
       <h2>Spread Operator</h2>
-      <h4>const a = [ 1, 2 ]</h4>
-      <h4>const b = [ 3, 4 ]</h4>
-      <h4>const c = [ ...a, ...b ]</h4>
-      <h4>console.log(c) // [1, 2, 3, 4]</h4>
+      <pre class="prettyprint">
+const a = [ 1, 2 ]
+const b = [ 3, 4 ]
+const c = [ ...a, ...b ]
+console.log(c) // [1, 2, 3, 4]
+    </pre>
     </div>
     <div class="card">
       <h2>Spread Operator</h2>
-      <h4>const a = {</h4>
-      <h4>&nbsp; firstName: "FirstName",</h4>
-      <h4>&nbsp; lastName: "LastName1",</h4>
-      <h4>}</h4>
-      <h4>const b = {</h4>
-      <h4>&nbsp; ...a,</h4>
-      <h4>&nbsp; lastName: "LastName2",</h4>
-      <h4>&nbsp; canWork: true,</h4>
-      <h4>}</h4>
-      <h4>console.log(a)</h4>
-      <h4>// {firstName: "FirstName", lastName: "LastName1"}</h4>
-      <h4>console.log(b)</h4>
-      <h4>/* {firstName: "FirstName", lastName: "LastName2",</h4>
-      <h4>canWork: true} */</h4>
-      <h4>/* great for modifying objects without</h4>
-      <h4>side effects/affecting the original */</h4>
+      <pre class="prettyprint">
+const a = {
+&nbsp; firstName: "FirstName",
+&nbsp; lastName: "LastName1",
+}
+const b = {
+&nbsp; ...a,
+&nbsp; lastName: "LastName2",
+&nbsp; canWork: true,
+}
+console.log(a)
+// {firstName: "FirstName", lastName: "LastName1"}
+console.log(b)
+/* {firstName: "FirstName", lastName: "LastName2",
+canWork: true} */
+/* great for modifying objects without
+side effects/affecting the original */
+    </pre>
     </div>
     <div class="card">
       <h2>String includes()</h2>
-      <h4>console.log('apple'.includes('p1'))</h4>
-      <h4>// prints true</h4>
-      <h4>console.log('apple'.includes('tt'))</h4>
-      <h4>// prints false</h4>
+      <pre class="prettyprint">
+console.log('apple'.includes('p1'))
+// prints true
+console.log('apple'.includes('tt'))
+// prints false
+    </pre>
     </div>
     <div class="card">
       <h2>String startsWith()</h2>
-      <h4>console.log('apple'.startsWith('ap'))</h4>
-      <h4>// prints true</h4>
-      <h4>console.log('apple'.startsWith('bb'))</h4>
-      <h4>// prints false</h4>
+      <pre class="prettyprint">
+console.log('apple'.startsWith('ap'))
+// prints true
+console.log('apple'.startsWith('bb'))
+// prints false
+    </pre>
     </div>
     <div class="card">
       <h2>String repeat</h2>
-      <h4>console.log('ab'.repeat(3))</h4>
-      <h4>// prints "ababab"</h4>
+      <pre class="prettyprint">
+console.log('ab'.repeat(3))
+// prints "ababab"
+    </pre>
     </div>
     <div class="card">
       <h2>Destructuring Array</h2>
-      <h4>let [a, b] = [3, 7]</h4>
-      <h4>console.log(a); // 3</h4>
-      <h4>console.log(b); // 7</h4>
+      <pre class="prettyprint">
+let [a, b] = [3, 7]
+console.log(a); // 3
+console.log(b); // 7
+    </pre>
     </div>
     <div class="card">
       <h2>Destructuring Object</h2>
-      <h4>let obj = {</h4>
-      <h4>&nbsp; a: 55,</h4>
-      <h4>&nbsp; b: 44</h4>
-      <h4>};</h4>
-      <h4>let { a, b } = obj;</h4>
-      <h4>console.log(a); // 55</h4>
-      <h4>console.log(b); // 44</h4>
+      <pre class="prettyprint">
+let obj = {
+&nbsp; a: 55,
+&nbsp; b: 44
+};
+let { a, b } = obj;
+console.log(a); // 55
+console.log(b); // 44
+    </pre>
     </div>
     <div class="card">
       <h2>Destructuring Nested Object</h2>
-      <h4>const Person = {</h4>
-      <h4>&nbsp; name: "Rahim Rahman",</h4>
-      <h4>&nbsp; age: 24,</h4>
-      <h4>&nbsp; sex: "male",</h4>
-      <h4>&nbsp; materialStatus: "single",</h4>
-      <h4>&nbsp; address: {</h4>
-      <h4>&nbsp;&nbsp; country: "Bangladesh",</h4>
-      <h4>&nbsp;&nbsp; city: "Rajshahi",</h4>
-      <h4>&nbsp;&nbsp; thana: "Boalia",</h4>
-      <h4>&nbsp;&nbsp; postal: 6100</h4>
-      <h4>&nbsp;&nbsp; },</h4>
-      <h4>&nbsp; };</h4>
-      <h4>&nbsp; const { address : { city, postal }, name } = Person;</h4>
-      <h4>&nbsp; console.log(name, city, postal)</h4>
-      <h4>&nbsp; // Rahim Rahman Rajshahi 6100</h4>
-      <h4>&nbsp; console.log(city) // ReferenceError</h4>
+      <pre class="prettyprint">
+const Person = {
+&nbsp; name: "Rahim Rahman",
+&nbsp; age: 24,
+&nbsp; sex: "male",
+&nbsp; materialStatus: "single",
+&nbsp; address: {
+&nbsp;&nbsp; country: "Bangladesh",
+&nbsp;&nbsp; city: "Rajshahi",
+&nbsp;&nbsp; thana: "Boalia",
+&nbsp;&nbsp; postal: 6100
+&nbsp;&nbsp; },
+&nbsp; };
+&nbsp; const { address : { city, postal }, name } = Person;
+&nbsp; console.log(name, city, postal)
+&nbsp; // Rahim Rahman Rajshahi 6100
+&nbsp; console.log(city) // ReferenceError
     </div>
   </section>
 
   <section class="vanilla-js">
     <div class="heading">
-      <h1>Vanilla Javascript Cheat Sheet</h1>
+<h1>Vanilla Javascript Cheat Sheet</h1>
     </div>
   </section>
   <section class="cards">
     <div class="card">
-      <h2>Variable</h2>
-      <h4>var paperColor = white;</h4>
-      <h4>var roastQuantity = 4;</h4>
-      <h4>var isRaining = true;</h4>
+<h2>Variable</h2>
+<pre class="prettyprint">
+var paperColor = white;
+var roastQuantity = 4;
+var isRaining = true;
+    </pre>
     </div>
     <div class="card">
       <h2>Array</h2>
-      <h4>var items = ['bottle', 'mug', 'paper', 'pen'];</h4>
-      <h4>items.length; // -1</h4>
-      <h4>items.indexOf('book'); // -1</h4>
-      <h4>items.push('envelope');</h4>
-      <h4>items.pop('watch');</h4>
-      <h4>items.unshift('keyboard');</h4>
-      <h4>items.shift();</h4>
+      <pre class="prettyprint">
+var items = ['bottle', 'mug', 'paper', 'pen'];
+items.length; // -1
+items.indexOf('book'); // -1
+items.push('envelope');
+items.pop('watch');
+items.unshift('keyboard');
+items.shift();
+    </pre>
     </div>
     <div class="card">
       <h2>If Statement</h2>
-      <h4>if (3 < 5) {</h4>
-          <h4>&nbsp; console.log("Yeah I will be executed!");,</h4>
-          <h4>}</h4>
-    </div>
-    <div class="card">
-      <h2>If...else Statement</h2>
-      <h4>var age = 21;</h4>
-      <h4>if (age > 18) {</h4>
-      <h4>&nbsp; console.log('Now you are Adult');</h4>
-      <h4>} else {</h4>
-      <h4>&nbsp; console.log('No you are not aged enough to be an Adult');</h4>
-      <h4>}</h4>
-    </div>
-    <div class="card">
-      <h2>If...else if Statement</h2>
-      <h4>var whatDay = 'Sunday';</h4>
-      <h4>if (age > 18) {</h4>
-      <h4>&nbsp; console.log('Now you are Adult');</h4>
-      <h4>} else {</h4>
-      <h4>&nbsp; console.log('No you are not aged enough to be an Adult');</h4>
-      <h4>}</h4>
-    </div>
-    <div class="card">
-      <h2>If...else Statement</h2>
-      <h4>var age = 21;</h4>
-      <h4>if (age > 18) {</h4>
-      <h4>&nbsp; console.log('Now you are Adult');</h4>
-      <h4>} else {</h4>
-      <h4>&nbsp; console.log('No you are not aged enough to be an Adult');</h4>
-      <h4>}</h4>
-    </div>
-    <div class="card">
-      <h2>If...else Statement</h2>
-      <h4>var age = 21;</h4>
-      <h4>if (age > 18) {</h4>
-      <h4>&nbsp; console.log('Now you are Adult');</h4>
-      <h4>} else {</h4>
-      <h4>&nbsp; console.log('No you are not aged enough to be an Adult');</h4>
-      <h4>}</h4>
-    </div>
+      <pre class="prettyprint">
+if (3 < 5) { &nbsp; console.log("Yeah I will be executed!");, } </div>
+  <div class="card">
+<h2>If...else Statement</h2>
+<pre class="prettyprint">
+var age = 21;
+if (age > 18) {
+&nbsp; console.log('Now you are Adult');
+} else {
+&nbsp; console.log('No you are not aged enough to be an Adult');
+}
+  </div>
+  <div class="card">
+<h2>If...else if Statement</h2>
+<pre class="prettyprint">
+var whatDay = 'Sunday';
+if (age > 18) {
+&nbsp; console.log('Now you are Adult');
+} else {
+&nbsp; console.log('No you are not aged enough to be an Adult');
+}
+  </div>
+  <div class="card">
+<h2>If...else Statement</h2>
+<pre class="prettyprint">
+var age = 21;
+if (age > 18) {
+&nbsp; console.log('Now you are Adult');
+} else {
+&nbsp; console.log('No you are not aged enough to be an Adult');
+}
+  </div>
+  <div class="card">
+<h2>If...else Statement</h2>
+<pre class="prettyprint">
+var age = 21;
+if (age > 18) {
+&nbsp; console.log('Now you are Adult');
+} else {
+&nbsp; console.log('No you are not aged enough to be an Adult');
+}
+  </div>
   </section>
 
 
@@ -317,21 +358,21 @@ ul.appendChild(li);
 
   <section class="reminder">
     <p>
-      My brothers and sisters, <br /><br />
-      Every single one of us plays a role in this life. You are far more
-      important than what you really think. Because every one of us is either
-      a mother or a father or a neighbour or an employee or a worker. And
-      somewhere out there there's a young boy or a young girl that's looking
-      up to you. What seed are you planting in people's hearts. What vibes do
-      you put out? And more importantly, how wil we be when we die? Will we be
-      thanked? Or will we be forgotten? <br /><br />
-      And lastly, <br /><br />
-      Try to fix your salah. Try to fix your salah. If you're not praying,
-      pray. If you're praying See how you can make it better. Ask the ones who
-      are dead The one thing that you have now and they don't is your time.
-      Take care of yourself and Take care of your soul. Jazakallahu khairan.
-      <br />
-      As salamu alaykum.
+My brothers and sisters, <br /><br />
+Every single one of us plays a role in this life. You are far more
+important than what you really think. Because every one of us is either
+a mother or a father or a neighbour or an employee or a worker. And
+somewhere out there there's a young boy or a young girl that's looking
+up to you. What seed are you planting in people's hearts. What vibes do
+you put out? And more importantly, how wil we be when we die? Will we be
+thanked? Or will we be forgotten? <br /><br />
+And lastly, <br /><br />
+Try to fix your salah. Try to fix your salah. If you're not praying,
+pray. If you're praying See how you can make it better. Ask the ones who
+are dead The one thing that you have now and they don't is your time.
+Take care of yourself and Take care of your soul. Jazakallahu khairan.
+<br />
+As salamu alaykum.
     </p>
   </section>
 
