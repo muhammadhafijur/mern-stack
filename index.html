@@ -340,28 +340,180 @@ if (age > 18) {
     <h1>DOM Section</h1>
   </section>
 
+  
+
   <section class="cards">
+
+    <!-- *************
+      Module Summary(Module: 24-7) Starts 
+     ***************-->
+    <div class="card">
+      <h2>Access for Tags and Implement styles</h2>
+      <pre class="prettyprint">
+const variable = document.getElementsByTagName('p');
+//It will show all the paragraph tags
+
+variable.style.backgroundColor = 'steelblue';
+//sets background color to steelblue
+
+variable.style.color = 'white';
+//sets text color to white
+      </pre>
+    </div>
+
+
+    <div class="card">
+      <h2>Select a Specific Element, Set innerText & innerHTML</h2>
+      <pre class="prettyprint">
+const variable = document.getElementById('element-id')
+//selects a specific element
+
+variable.innerText ='Hi There';
+//sets inner text
+
+variable.innerHTML = `
+&lt;h4&gt; Thank You &lt;/h4&gt;
+`;
+//sets innerHTML
+          </pre>
+    </div>
+
+    <div class="card">
+      <h2>Access Elements With Class & NodeList</h2>
+      <pre class="prettyprint">
+const variable = document.getElementsByClassName
+('class-name');
+//access elements with class name
+
+document.querySelectorAll('p');
+//access elements with nodeLists
+      </pre>
+    </div>
+    <div class="card">
+      <h2>Remove an Element</h2>
+      <pre class="prettyprint">
+const variable = document.getElementById('parent-element-id');
+const death = variable.children[4];
+variable.removeChild(death);
+//it will remove the 5th child element
+      </pre>
+    </div>
+    <div class="card">
+      <h2>Create Element</h2>
+      <pre class="prettyprint">
+const friend = document.createElement('li');
+friend.innerText = "Hi There";
+const  friends = document.getElementById('friends');
+friends.appendChild(friend);
+      </pre>
+    </div>
+<!-- *************
+      Module Summary(Module: 24-7) Ends
+     ***************-->
+
+
+     <!-- This card is Extra -->
+    <div class="card">
+      <h2>Extra</h2>
+      <pre class="prettyprint">
+
+      </pre>
+</div>
+
+    <!-- *********
+Event Bubble(Module: 24-7) Starts
+************ -->
+
+    <div class="card">
+      <h2>Event Bubble</h2>
+      <pre class="prettyprint">
+&lt;section id = "section-container"&gt;
+  &lt;h4&gt;Event Bubble&lt;/h4&gt;
+  &lt;ul id="list-container"&gt;
+    &lt;li id="item-1"&gt;One&lt;/li&gt;
+    &lt;li id="item-2"&gt;Two&lt;/li&gt;
+    &lt;li id="item-3"&gt;Three&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+
+&lt;script&gt;    
+
+document.getElementById('item-3').addEventListener('click', function(event){
+&nbsp; console.log("Item-3 clicked");   
+});
+document.getElementById('list-container').addEventListener('click', function(){
+&nbsp; console.log("List Container clicked");
+});
+document.getElementById('section-container').addEventListener('click', function(){
+&nbsp; console.log("Section Container clicked");
+});
+&lt;/script&gt;  
+/*
+If we click on any list item it will trigger it's parent and it's parent's parent too.
+In this case if we click on 'Three'(id="item-3") it will trigger not only it's parent "list-container" but also "section-container".It will show output like below:
+Item-3 clicked
+Section Container clicked
+List Container clicked
+*/      
+    </pre>
+    </div>
+
+    <div class="card">
+      <h2>How to Stop Event Bubble</h2>
+      <pre class="prettyprint">
+document.getElementById('item-2').addEventListener('click', function(event){
+&nbsp; console.log("Item-2 clicked");
+event.stopPropagation();
+});
+/*
+To stop this event bubble we need to use stopPropagation() with a parameter 'event' or 'e'.
+It stops it's parent item from getting triggered but it will trigger it's siblings.
+Here if we click 'Two' it will show output like below:
+Item-1 clicked
+Item-2 clicked
+Item-3 clicked 
+*/
+
+
+document.getElementById('item-1').addEventListener('click', function(event){
+console.log("Item-1 clicked");
+event.stopImmediatePropagation();
+});
+/*
+If we want to trigger only the item itself then we have to use stopImmediatePropagation() with a parameter 'event' or 'e'.
+Here if we click 'One' it will show output like below:
+Item-1 clicked
+*/
+
+      </pre>
+    </div>
+
+    <!-- *********
+Event Bubble(Module: 24-7) Ends
+************ -->
 
   </section>
 
 
+
+
   <section class="reminder">
     <p>
-My brothers and sisters, <br /><br />
-Every single one of us plays a role in this life. You are far more
-important than what you really think. Because every one of us is either
-a mother or a father or a neighbour or an employee or a worker. And
-somewhere out there there's a young boy or a young girl that's looking
-up to you. What seed are you planting in people's hearts. What vibes do
-you put out? And more importantly, how wil we be when we die? Will we be
-thanked? Or will we be forgotten? <br /><br />
-And lastly, <br /><br />
-Try to fix your salah. Try to fix your salah. If you're not praying,
-pray. If you're praying See how you can make it better. Ask the ones who
-are dead The one thing that you have now and they don't is your time.
-Take care of yourself and Take care of your soul. Jazakallahu khairan.
-<br />
-As salamu alaykum.
+      My brothers and sisters, <br /><br />
+      Every single one of us plays a role in this life. You are far more
+      important than what you really think. Because every one of us is either
+      a mother or a father or a neighbour or an employee or a worker. And
+      somewhere out there there's a young boy or a young girl that's looking
+      up to you. What seed are you planting in people's hearts. What vibes do
+      you put out? And more importantly, how wil we be when we die? Will we be
+      thanked? Or will we be forgotten? <br /><br />
+      And lastly, <br /><br />
+      Try to fix your salah. Try to fix your salah. If you're not praying,
+      pray. If you're praying See how you can make it better. Ask the ones who
+      are dead The one thing that you have now and they don't is your time.
+      Take care of yourself and Take care of your soul. Jazakallahu khairan.
+      <br />
+      As salamu alaykum.
     </p>
   </section>
 
