@@ -1,8 +1,12 @@
 this is line one
 this is line two
+<<<<<<< HEAD
 this is line three from shuvro
 this is line from hafijur
 THis is number five
 This is number six
 this is line five.
 this is line six
+=======
+this is line three
+>>>>>>> a05802cad9d144efeb2356840aaac70704f719a0
