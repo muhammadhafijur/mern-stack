@@ -9,8 +9,8 @@
   <!-- Font awesome kit -->
   <script src="https://kit.fontawesome.com/89d900d448.js" crossorigin="anonymous"></script>
   <!-- styles -->
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="stylesheet" href="style/code.css">
 </head>
 
 <body>
@@ -32,28 +32,35 @@
   <section class="cards">
     <div class="card">
       <h2>Arrow Function</h2>
-      <h4>const sum = (a, b) => a + b</h4>
-      <h4>console.log(sum(2, 6)) // prints 8</h4>
+      <pre class="prettyprint">
+const sum = (a, b) => a + b
+console.log(sum(2, 6)) // prints 8
+      </pre>
+
     </div>
     <div class="card">
       <h2>Object Property Assignment</h2>
-      <h4>const a = 2</h4>
-      <h4>const b = 5</h4>
-      <h4>const obj = { a, b }</h4>
-      <h4>// Before es6:</h4>
-      <h4>// obj = { a: a, b: b }</h4>
-      <h4>console.log(obj)</h4>
-      <h4>// prints = { a: 2, b: 5 }</h4>
+      <pre class="prettyprint">
+const a = 2
+const b = 5
+const obj = { a, b }
+// Before es6:
+// obj = { a: a, b: b }
+console.log(obj)
+// prints = { a: 2, b: 5 }
+</pre>
     </div>
     <div class="card">
       <h2>Object Function Assignment</h2>
-      <h4>const obj = {</h4>
-      <h4>a: 5,</h4>
-      <h4>b() {</h4>
-      <h4>console.log('b')</h4>
-      <h4>&nbsp; }</h4>
-      <h4>}</h4>
-      <h4>obj.b() // prints "b"</h4>
+      <pre class="prettyprint">
+const obj = {
+  a: 5,
+  b() {
+    console.log('b')
+  }
+  }
+obj.b() // prints "b"
+        </pre>
     </div>
     <div class="card">
       <h2>Default Parameters</h2>
@@ -266,34 +273,22 @@
       <h4>}</h4>
     </div>
     <div class="card">
-      <pre class="prettyprint">class Voila {
-        public:
-          // Voila
-          static const string VOILA = "Voila";
-        
-          // will not interfere with embedded <a href="#voila2">tags</a>.
-        }</pre>
+      <h2>If...else Statement</h2>
+      <h4>var age = 21;</h4>
+      <h4>if (age > 18) {</h4>
+      <h4>&nbsp; console.log('Now you are Adult');</h4>
+      <h4>} else {</h4>
+      <h4>&nbsp; console.log('No you are not aged enough to be an Adult');</h4>
+      <h4>}</h4>
     </div>
     <div class="card">
-      <h2>Destructuring Nested Object</h2>
-      <pre class="prettyprint">
-const Person = {
-   name: "Rahim Rahman",
-   age: 24,
-   sex: "male",
-   materialStatus: "single",
-   address: {
-   country: "Bangladesh",
-   city: "Rajshahi",
-   thana: "Boalia",
-   postal: 6100
-},
-s};
-const { address : { city, postal }, name } = Person;
-console.log(name, city, postal)
-// Rahim Rahman Rajshahi 6100
-console.log(city) // ReferenceError
-</pre>
+      <h2>If...else Statement</h2>
+      <h4>var age = 21;</h4>
+      <h4>if (age > 18) {</h4>
+      <h4>&nbsp; console.log('Now you are Adult');</h4>
+      <h4>} else {</h4>
+      <h4>&nbsp; console.log('No you are not aged enough to be an Adult');</h4>
+      <h4>}</h4>
     </div>
   </section>
 
@@ -330,8 +325,7 @@ console.log(city) // ReferenceError
   <footer>
     <h5>&copy; Hafijur Rahman | All rights reserved.</h5>
   </footer>
-  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-
+  <script src="js/run_prettify.js"></script>
 </body>
 
 </html>
