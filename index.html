@@ -341,6 +341,7 @@ if (age > 18) {
   </section>
 
   <section class="cards">
+    <!-- DOM (getElementsByClassName) -->
     <div class="card">
       <h2>DOM (getElementsByClassName)</h2>
       <pre class="prettyprint">
@@ -357,6 +358,30 @@ for (const blog of blogs) {
 }
     </pre>
     </div>
+<!-- DOM (Changing the inner text using function) -->
+<div class="card">
+  <h2>DOM (Changing the inner text using function)</h2>
+  <pre class="prettyprint">
+// Declaring a function for changing the inner text
+
+function onClickChangeText() {
+  const p = document.getElementById("p-text");
+  p.innerText = "Hi I'm Changed By A Function";
+}
+</pre>
+</div>
+<!-- DOM (Changing the inner text directly) -->
+<div class="card">
+  <h2>DOM (Changing the inner text without function)</h2>
+  <pre class="prettyprint">
+// Changing the inner text directly
+
+document.getElementById("btn").addEventListener("click", function () {
+  const p = document.getElementById("p-text");
+  p.innerText = "Changed directly without using function";
+});
+</pre>
+</div>
   </section>
 
 
