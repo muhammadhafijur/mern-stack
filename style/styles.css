@@ -93,6 +93,9 @@ header{
     border: none;
     padding: 30px;
 }
+.card .prettyprint{
+    font-size: 1.4375rem;
+}
 
 
 .card h2{
