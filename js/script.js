@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   vanillaJsOldElement.replaceWith(vanillaJsNewElement);
 
   // testing
-  const domNewElement = createNewSection(date.dom);
+  const domNewElement = createNewSection(data.dom);
   const domOldElement = document.getElementById("dom");
   domOldElement.replaceWith(domNewElement);
 
