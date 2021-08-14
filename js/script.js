@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   newContentForEs6.classList.add("cards");
 
   for (const item of data.es6) {
+    //   creating new card and adding h2 to and content to that card.
     const cardContentElement = document.createElement("div");
     cardContentElement.classList.add("card");
 
@@ -19,8 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     newContentForEs6.appendChild(cardContentElement);
   }
-
+  //   adding full cars to the website.
   const es6ContentElement = document.getElementById("es6-content");
-  es6ContentElement.appendChild(newContentForEs6);
+  es6ContentElement.replaceWith(newContentForEs6);
+
   PR.prettyPrint();
 });
