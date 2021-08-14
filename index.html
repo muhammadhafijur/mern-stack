@@ -29,249 +29,20 @@
   <h1 class="display-1 bg-success text-center mt-5"></h1>
 
   <!-- cards -->
+  <div id="es6-content"></div>
   <section class="cards">
-    <div class="card">
-      <h2>Arrow Function</h2>
-      <pre class="prettyprint">
-const sum = (a, b) => a + b
-console.log(sum(2, 6)) // prints 8
-</pre>
 
-
-    </div>
-    <div class="card">
-      <h2>Object Property Assignment</h2>
-      <pre class="prettyprint">
-const a = 2
-const b = 5
-const obj = { a, b }
-// Before es6:
-// obj = { a: a, b: b }
-console.log(obj)
-// prints = { a: 2, b: 5 }
-</pre>
-      </pre>
-    </div>
-    <div class="card">
-      <h2>Object Function Assignment</h2>
-      <pre class="prettyprint">
-const obj = {
-  a: 5,
-  b() {
-    console.log('b')
-  }
-  }
-obj.b() // prints "b"
-  </pre>
-      </pre>
-    </div>
-    <div class="card">
-      <h2>Default Parameters</h2>
-      <pre class="prettyprint">
-function print(a = 5) {
-&nbsp; console.log(a)
-}
-print() // prints 5
-print(22) // prints 22
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Let Scope</h2>
-      <pre class="prettyprint">
-let a = 3
-&nbsp; if (true) {
-let a = 5
-console.log(a) //prints 5
-}
-obj.b() // prints "b"
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Object Assign</h2>
-      <pre class="prettyprint">
-const obj1 = {a: 1}
-const obj2 = {b: 2}
-const obj3 = Object.assign({},
-&nbsp; &nbsp; obj1, obj2)
-console.log(obj3)
-// { a: 1, b: 2 }
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Object Entries</h2>
-      <pre class="prettyprint">
-const obj = {
-  firstName: 'FirstName'
-  lastName: 'LastName'
-  age: 24
-  country: Bangladesh
-};
-const entries = Object.entries(obj);
-/* returns an array of [key, value]
-  pairs of the object passed */
-console.log(entries)
-/* prints
-[
-['firstName', 'FirstName']
-['lastName', 'LastName']
-['age', 24]
-['country', 'Bangladesh']
-]; */
-  </pre>
-      </pre>
-    </div>
-    <div class="card">
-      <h2>Const</h2>
-      <pre class="prettyprint">
-// can be assigned only once
-const a = 55
-a = 44 // throws an error
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Promises with finally</h2>
-      <pre class="prettyprint">
-promise
-&nbsp; .then((result) => { ... })
-&nbsp; .catch((error) => { ... })
-&nbsp; .finally(() => { /* logic
-&nbsp; .finally(() => { /* logic
-independent of success/error */ })
-/* The handler is called when the
-promise is fulfilled or rejected. */
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Multiline string</h2>
-      <pre class="prettyprint">
-console.log(`
-&nbsp; This is a
-&nbsp; multiline string
-`)
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Template String</h2>
-      <pre class="prettyprint">
-const name = 'World'
-const message = `Hello ${name}`
-console.log(message)
-// prints "Hello World"
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Exponent Operator</h2>
-      <pre class="prettyprint">
-const byte = 2 ** 8
-// Same as: Math.pow(2, 8)
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Spread Operator</h2>
-      <pre class="prettyprint">
-const a = [ 1, 2 ]
-const b = [ 3, 4 ]
-const c = [ ...a, ...b ]
-console.log(c) // [1, 2, 3, 4]
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Spread Operator</h2>
-      <pre class="prettyprint">
-const a = {
-&nbsp; firstName: "FirstName",
-&nbsp; lastName: "LastName1",
-}
-const b = {
-&nbsp; ...a,
-&nbsp; lastName: "LastName2",
-&nbsp; canWork: true,
-}
-console.log(a)
-// {firstName: "FirstName", lastName: "LastName1"}
-console.log(b)
-/* {firstName: "FirstName", lastName: "LastName2",
-canWork: true} */
-/* great for modifying objects without
-side effects/affecting the original */
-    </pre>
-    </div>
-    <div class="card">
-      <h2>String includes()</h2>
-      <pre class="prettyprint">
-console.log('apple'.includes('p1'))
-// prints true
-console.log('apple'.includes('tt'))
-// prints false
-    </pre>
-    </div>
-    <div class="card">
-      <h2>String startsWith()</h2>
-      <pre class="prettyprint">
-console.log('apple'.startsWith('ap'))
-// prints true
-console.log('apple'.startsWith('bb'))
-// prints false
-    </pre>
-    </div>
-    <div class="card">
-      <h2>String repeat</h2>
-      <pre class="prettyprint">
-console.log('ab'.repeat(3))
-// prints "ababab"
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Destructuring Array</h2>
-      <pre class="prettyprint">
-let [a, b] = [3, 7]
-console.log(a); // 3
-console.log(b); // 7
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Destructuring Object</h2>
-      <pre class="prettyprint">
-let obj = {
-&nbsp; a: 55,
-&nbsp; b: 44
-};
-let { a, b } = obj;
-console.log(a); // 55
-console.log(b); // 44
-    </pre>
-    </div>
-    <div class="card">
-      <h2>Destructuring Nested Object</h2>
-      <pre class="prettyprint">
-const Person = {
-&nbsp; name: "Rahim Rahman",
-&nbsp; age: 24,
-&nbsp; sex: "male",
-&nbsp; materialStatus: "single",
-&nbsp; address: {
-&nbsp;&nbsp; country: "Bangladesh",
-&nbsp;&nbsp; city: "Rajshahi",
-&nbsp;&nbsp; thana: "Boalia",
-&nbsp;&nbsp; postal: 6100
-&nbsp;&nbsp; },
-&nbsp; };
-&nbsp; const { address : { city, postal }, name } = Person;
-&nbsp; console.log(name, city, postal)
-&nbsp; // Rahim Rahman Rajshahi 6100
-&nbsp; console.log(city) // ReferenceError
-    </div>
   </section>
 
   <section class="vanilla-js">
     <div class="heading">
-<h1>Vanilla Javascript Cheat Sheet</h1>
+      <h1>Vanilla Javascript Cheat Sheet</h1>
     </div>
   </section>
   <section class="cards">
     <div class="card">
-<h2>Variable</h2>
-<pre class="prettyprint">
+      <h2>Variable</h2>
+      <pre class="prettyprint">
 var paperColor = white;
 var roastQuantity = 4;
 var isRaining = true;
@@ -370,8 +141,8 @@ As salamu alaykum.
   </footer>
 
   <!-- script files -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script type="module" src="js/script.js"></script>
-  <script src="js/run_prettify.js"></script>
 </body>
 
 </html>
