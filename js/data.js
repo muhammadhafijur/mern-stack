@@ -1,12 +1,12 @@
 const codeData = {
   es6: [
-    {
+{
 title: "Arrow Function",
 content: `const sum = (a, b) => a + b
 console.log(sum(2, 6)) // prints 8
  `,
-    },
-    {
+},
+{
 title: "Object Property Assignment",
 content: `const a = 2
  const b = 5
@@ -17,8 +17,8 @@ content: `const a = 2
  // prints = { a: 2, b: 5 }
 
  `,
-    },
-    {
+},
+{
 title: "Object Function Assignment",
 content: `const obj = {
  a: 5,
@@ -29,8 +29,8 @@ content: `const obj = {
  obj.b() // prints "b"
 
  `,
-    },
-    {
+},
+{
 title: "Default Parameters",
 content: `function print(a = 5) {
   console.log(a)
@@ -38,8 +38,8 @@ content: `function print(a = 5) {
  print() // prints 5
  print(22) // prints 22
  `,
-    },
-    {
+},
+{
 title: "Let Scope",
 content: `let a = 3
   if (true) {
@@ -48,8 +48,8 @@ content: `let a = 3
  }
  obj.b() // prints "b"
  `,
-    },
-    {
+},
+{
 title: "Object Assign",
 content: `const obj1 = {a: 1}
  const obj2 = {b: 2}
@@ -58,8 +58,8 @@ content: `const obj1 = {a: 1}
  console.log(obj3)
  // { a: 1, b: 2 }
  `,
-    },
-    {
+},
+{
 title: "Object Entries",
 content: `const obj = {
  firstName: 'FirstName'
@@ -80,15 +80,15 @@ content: `const obj = {
  ]; */
 
  `,
-    },
-    {
+},
+{
 title: "Const",
 content: `// can be assigned only once
  const a = 55
  a = 44 // throws an error
  `,
-    },
-    {
+},
+{
 title: "Promises with finally",
 content: `promise
   .then((result) => { ... })
@@ -99,38 +99,38 @@ content: `promise
  /* The handler is called when the
  promise is fulfilled or rejected. */
  `,
-    },
-    {
+},
+{
 title: "Multiline string",
 content: `console.log(\`
   This is a
   multiline string
  \`)
  `,
-    },
-    {
+},
+{
 title: "Template String",
 content: `const name = 'World'
  const message = \`Hello ${name}\`
  console.log(message)
  // prints "Hello World"
  `,
-    },
-    {
+},
+{
 title: "Exponent Operator",
 content: `const byte = 2 ** 8
  // Same as: Math.pow(2, 8)
  `,
-    },
-    {
+},
+{
 title: "Spread Operator",
 content: `const a = [ 1, 2 ]
  const b = [ 3, 4 ]
  const c = [ ...a, ...b ]
  console.log(c) // [1, 2, 3, 4]
  `,
-    },
-    {
+},
+{
 title: "Spread Operator",
 content: `const a = {
   firstName: "FirstName",
@@ -149,37 +149,37 @@ content: `const a = {
  /* great for modifying objects without
  side effects/affecting the original */
  `,
-    },
-    {
+},
+{
 title: "String includes()",
 content: `console.log('apple'.includes('p1'))
  // prints true
  console.log('apple'.includes('tt'))
  // prints false
  `,
-    },
-    {
+},
+{
 title: "String startsWith()",
 content: `console.log('apple'.startsWith('ap'))
  // prints true
  console.log('apple'.startsWith('bb'))
  // prints false
  `,
-    },
-    {
+},
+{
 title: "String repeat",
 content: `console.log('ab'.repeat(3))
  // prints "ababab"
  `,
-    },
-    {
+},
+{
 title: "Destructuring Array",
 content: `let [a, b] = [3, 7]
  console.log(a); // 3
  console.log(b); // 7
  `,
-    },
-    {
+},
+{
 title: "Destructuring Object",
 content: `let obj = {
   a: 55,
@@ -189,8 +189,8 @@ content: `let obj = {
  console.log(a); // 55
  console.log(b); // 44
  `,
-    },
-    {
+},
+{
 title: "Destructuring Nested Object",
 content: `const Person = {
   name: "Rahim Rahman",
@@ -209,17 +209,17 @@ console.log(name, city, postal)
 // Rahim Rahman Rajshahi 6100
 console.log(city) // ReferenceError
  `,
-    },
+},
   ],
   vanilla: [
-    {
+{
 title: "Variable",
 content: `var paperColor = white;
 var roastQuantity = 4;
 var isRaining = true;
 `,
-    },
-    {
+},
+{
 title: "Array",
 content: `var items = ['bottle', 'mug', 'paper', 'pen'];
 items.length; // -1
@@ -229,12 +229,12 @@ items.pop('watch');
 items.unshift('keyboard');
 items.shift();
 `,
-    },
-    {
+},
+{
 title: "If Statement",
 content: `if (3 < 5) {  console.log("Yeah I will be executed!"); } `,
-    },
-    {
+},
+{
 title: "If...else Statement",
 content: `var age = 21;
 if (age > 18) {
@@ -242,25 +242,25 @@ if (age > 18) {
 } else {
  console.log('No you are not aged enough to be an Adult');
 }`,
-    },
+},
 
-    {
+{
 title: "If...else if Statement",
 content: `var whatDay = 'Sunday';
 if (age > 18) {
  console.log('Now you are Adult');
 } else {
  console.log('No you are not aged enough to be an Adult');`,
-    },
-    {
+},
+{
 title: "If...else Statement",
 content: `var age = 21;
 if (age > 18) {
  console.log('Now you are Adult');
 } else {
  console.log('No you are not aged enough to be an Adult');`,
-    },
-    {
+},
+{
 title: "If...else Statement",
 content: `var age = 21;
 if (age > 18) {
@@ -268,35 +268,109 @@ if (age > 18) {
 } else {
  console.log('No you are not aged enough to be an Adult');
 }`,
-    },
-    {
+},
+{
 title: "Different ways to use addEventListener on a button",
 content: `// handle event using anonymous function
 const greenButton = document.getElementById('make-green-button');
 // anonymous function
 greenButton.onclick = function () {   
-    document.body.style.backgroundColor = 'green';
+document.body.style.backgroundColor = 'green';
 }
 
 // handle by using add eventlisenter
 const tealButton = document.getElementById('make-teal-button');
 tealButton.addEventListener('click', makeTeal);
 function makeTeal() {
-    document.body.style.backgroundColor = 'teal';
+document.body.style.backgroundColor = 'teal';
 }
 
 // addEventListener
 const orangeButton = document.getElementById('make-orange-button');
 orangeButton.addEventListener('click', function () {
-    document.body.style.backgroundColor = 'orange';
+document.body.style.backgroundColor = 'orange';
 })
 
 // direct shortcut
 document.getElementById('light-blue').addEventListener('click', function () {
-    document.body.style.backgroundColor = 'lightblue'
+document.body.style.backgroundColor = 'lightblue'
 })
 `,
-    },
+},
+  ],
+  dom: [
+{
+title: "Different ways to use addEventListener on a button",
+content: `// handle event using anonymous function
+const greenButton = document.getElementById('make-green-button');
+// anonymous function
+greenButton.onclick = function () {   
+document.body.style.backgroundColor = 'green';
+}
+
+// handle by using add eventlisenter
+const tealButton = document.getElementById('make-teal-button');
+tealButton.addEventListener('click', makeTeal);
+function makeTeal() {
+document.body.style.backgroundColor = 'teal';
+}
+
+// addEventListener
+const orangeButton = document.getElementById('make-orange-button');
+orangeButton.addEventListener('click', function () {
+document.body.style.backgroundColor = 'orange';
+})
+
+// direct shortcut
+document.getElementById('light-blue').addEventListener('click', function () {
+document.body.style.backgroundColor = 'lightblue'
+})
+`,
+},
+{
+title: "Create a comment box and display comment",
+content: `// 1. add button event handler
+document.getElementById('submit-comment').addEventListener('click', function() {
+// 2. get user comment
+const commentBox = document.getElementById('new-comment')
+// const userComment = commentBox.value;
+
+// 3. create comment paragraph
+const newComment = document.createElement('p');
+newComment.innerText = commentBox.value;
+
+// 4. append the comment
+const commentContainer = document.getElementById('comment-container');
+commentContainer.appendChild(newComment);
+commentContainer.removeAttribute.value;
+
+// 5. clean the comment box
+commentBox.value = ''
+})`
+},
+{
+title: "Event delegate and benefit of Event bubble",
+content: `// const items =document.getElementsByClassName('item');
+// for(const item of items) {
+// item.addEventListener('click', function (event) {
+// // document.getElementById('item-container').removeChild(item);
+// event.target.parentNode.removeChild(event.target)
+// })
+// }
+
+document.getElementById('add-item').addEventListener('click', function(){
+const li = document.createElement('li');
+li.innerText = 'Brand New Item';
+li.classList.add('item')
+const parent = document.getElementById('item-container');
+parent.appendChild(li)
+
+})
+
+document.getElementById('item-container').addEventListener('click', function(event){
+event.target.parentNode.removeChild(event.target);
+})`
+},
   ],
 };
 
