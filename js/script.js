@@ -34,5 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const vanillaJsOldElement = document.getElementById("vanilla");
   vanillaJsOldElement.replaceWith(vanillaJsNewElement);
 
+  // testing
+  const domNewElement = createNewSection(date.dom);
+  const domOldElement = document.getElementById("dom");
+  domOldElement.replaceWith(domNewElement);
+
   PR.prettyPrint();
 });
