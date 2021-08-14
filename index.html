@@ -1,110 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/89d900d448.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/code.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- Font awesome kit -->
-  <script src="https://kit.fontawesome.com/89d900d448.js" crossorigin="anonymous"></script>
-  <!-- styles -->
-  <link rel="stylesheet" href="style/styles.css" />
-  <link rel="stylesheet" href="style/code.css">
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <div class="icons">
-      <div class="logo">
-        <a href="#"><i class="fab fa-js-square"></i></a>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="icons">
+        <div class="logo">
+          <a href="#"><i class="fab fa-js-square"></i></a>
+        </div>
       </div>
-    </div>
-    <div class="heading">
-      <h1>Javascript ES6 Cheat Sheet</h1>
-    </div>
-  </header>
+      <div class="heading">
+        <h1>Javascript ES6 Cheat Sheet</h1>
+      </div>
+    </header>
 
-  <h1 class="display-1 bg-success text-center mt-5"></h1>
+    <h1 class="display-1 bg-success text-center mt-5"></h1>
 
-  <!-- cards -->
-  <section id="es6-content"></section>
+    <!-- cards -->
+    <section id="es6-content"></section>
 
+    <section class="vanilla-js">
+      <div class="heading">
+        <h1>Vanilla Javascript Cheat Sheet</h1>
+      </div>
+    </section>
+    <section id="vanilla"></section>
 
-  <section class="vanilla-js">
-    <div class="heading">
-      <h1>Vanilla Javascript Cheat Sheet</h1>
-    </div>
-  </section>
-  <section id="vanilla"></section>
+    <section class="dom">
+      <h1>DOM Section</h1>
+    </section>
 
+    <section class="reminder">
+      <p>
+        My brothers and sisters, <br /><br />
+        Every single one of us plays a role in this life. You are far more
+        important than what you really think. Because every one of us is either
+        a mother or a father or a neighbour or an employee or a worker. And
+        somewhere out there there's a young boy or a young girl that's looking
+        up to you. What seed are you planting in people's hearts. What vibes do
+        you put out? And more importantly, how wil we be when we die? Will we be
+        thanked? Or will we be forgotten? <br /><br />
+        And lastly, <br /><br />
+        Try to fix your salah. Try to fix your salah. If you're not praying,
+        pray. If you're praying See how you can make it better. Ask the ones who
+        are dead The one thing that you have now and they don't is your time.
+        Take care of yourself and Take care of your soul. Jazakallahu khairan.
+        <br />
+        As salamu alaykum.
+      </p>
+    </section>
 
-  <section class="dom">
-    <h1>DOM Section</h1>
-  </section>
+    <footer>
+      <h5>&copy; Hafijur Rahman | All rights reserved.</h5>
+    </footer>
 
-  <section class="cards">
-    // module 23.8 
-    <div class="card">
-      <h2>Create and Add Element</h2>
-      <pre class="prettyprint">
-//create element
-const li = document.createElement('li');
-li.innerText = 'your text';
-// where to add the element
-const ul = document.getElementById('ul-id');
-ul.appendChild(li);
-
-</pre>
-    </div>
-
-    // module 24.6
-    <div class="card">
-      <h2>Event Handlers</h2>
-      <pre class="prettyprint">
-document.getElementById('id-name').addEventListener('event-name', function(event){
-  // write your functionality as required
-})
-Example given below ->
-document.getElementById('delete-btn').addEventListener('click', function () {
-  document.getElementById('secret-info').style.display = 'none';
-});
-we can use more event like - focus, blur, keydown, keyup, keypress, change etc
-
-</pre>
-    </div>
-  </section> 
-
-
-
-  <section class="reminder">
-    <p>
-      My brothers and sisters, <br /><br />
-      Every single one of us plays a role in this life. You are far more
-      important than what you really think. Because every one of us is either
-      a mother or a father or a neighbour or an employee or a worker. And
-      somewhere out there there's a young boy or a young girl that's looking
-      up to you. What seed are you planting in people's hearts. What vibes do
-      you put out? And more importantly, how wil we be when we die? Will we be
-      thanked? Or will we be forgotten? <br /><br />
-      And lastly, <br /><br />
-      Try to fix your salah. Try to fix your salah. If you're not praying,
-      pray. If you're praying See how you can make it better. Ask the ones who
-      are dead The one thing that you have now and they don't is your time.
-      Take care of yourself and Take care of your soul. Jazakallahu khairan.
-      <br />
-      As salamu alaykum.
-    </p>
-  </section>
-
-  <footer>
-    <h5>&copy; Hafijur Rahman | All rights reserved.</h5>
-  </footer>
-
-  <!-- script files -->
-  <script src="js/run_prettify.js"></script>
-  <script type="module" src="js/script.js"></script>
-</body>
-
+    <!-- script files -->
+    <script src="js/run_prettify.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
 </html>
