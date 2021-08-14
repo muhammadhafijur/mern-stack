@@ -9,6 +9,15 @@ console.log(sum(2, 6)) // prints 8
 {
 title: "Object Property Assignment",
 content: `const a = 2
+    {
+      title: "Arrow Function",
+      content: `const sum = (a, b) => a + b
+console.log(sum(2, 6)) // prints 8
+ `,
+    },
+    {
+      title: "Object Property Assignment",
+      content: `const a = 2
  const b = 5
  const obj = { a, b }
  // Before es6:
@@ -21,6 +30,10 @@ content: `const a = 2
 {
 title: "Object Function Assignment",
 content: `const obj = {
+    },
+    {
+      title: "Object Function Assignment",
+      content: `const obj = {
  a: 5,
  b() {
  console.log('b')
@@ -33,6 +46,10 @@ content: `const obj = {
 {
 title: "Default Parameters",
 content: `function print(a = 5) {
+    },
+    {
+      title: "Default Parameters",
+      content: `function print(a = 5) {
   console.log(a)
  }
  print() // prints 5
@@ -42,6 +59,10 @@ content: `function print(a = 5) {
 {
 title: "Let Scope",
 content: `let a = 3
+    },
+    {
+      title: "Let Scope",
+      content: `let a = 3
   if (true) {
  let a = 5
  console.log(a) //prints 5
@@ -52,6 +73,10 @@ content: `let a = 3
 {
 title: "Object Assign",
 content: `const obj1 = {a: 1}
+    },
+    {
+      title: "Object Assign",
+      content: `const obj1 = {a: 1}
  const obj2 = {b: 2}
  const obj3 = Object.assign({},
    obj1, obj2)
@@ -62,6 +87,10 @@ content: `const obj1 = {a: 1}
 {
 title: "Object Entries",
 content: `const obj = {
+    },
+    {
+      title: "Object Entries",
+      content: `const obj = {
  firstName: 'FirstName'
  lastName: 'LastName'
  age: 24
@@ -91,6 +120,17 @@ content: `// can be assigned only once
 {
 title: "Promises with finally",
 content: `promise
+    },
+    {
+      title: "Const",
+      content: `// can be assigned only once
+ const a = 55
+ a = 44 // throws an error
+ `,
+    },
+    {
+      title: "Promises with finally",
+      content: `promise
   .then((result) => { ... })
   .catch((error) => { ... })
   .finally(() => { /* logic
@@ -103,6 +143,10 @@ content: `promise
 {
 title: "Multiline string",
 content: `console.log(\`
+    },
+    {
+      title: "Multiline string",
+      content: `console.log(\`
   This is a
   multiline string
  \`)
@@ -111,6 +155,10 @@ content: `console.log(\`
 {
 title: "Template String",
 content: `const name = 'World'
+    },
+    {
+      title: "Template String",
+      content: `const name = 'World'
  const message = \`Hello ${name}\`
  console.log(message)
  // prints "Hello World"
@@ -125,6 +173,16 @@ content: `const byte = 2 ** 8
 {
 title: "Spread Operator",
 content: `const a = [ 1, 2 ]
+    },
+    {
+      title: "Exponent Operator",
+      content: `const byte = 2 ** 8
+ // Same as: Math.pow(2, 8)
+ `,
+    },
+    {
+      title: "Spread Operator",
+      content: `const a = [ 1, 2 ]
  const b = [ 3, 4 ]
  const c = [ ...a, ...b ]
  console.log(c) // [1, 2, 3, 4]
@@ -133,6 +191,10 @@ content: `const a = [ 1, 2 ]
 {
 title: "Spread Operator",
 content: `const a = {
+    },
+    {
+      title: "Spread Operator",
+      content: `const a = {
   firstName: "FirstName",
   lastName: "LastName1",
  }
@@ -153,6 +215,10 @@ content: `const a = {
 {
 title: "String includes()",
 content: `console.log('apple'.includes('p1'))
+    },
+    {
+      title: "String includes()",
+      content: `console.log('apple'.includes('p1'))
  // prints true
  console.log('apple'.includes('tt'))
  // prints false
@@ -161,6 +227,11 @@ content: `console.log('apple'.includes('p1'))
 {
 title: "String startsWith()",
 content: `console.log('apple'.startsWith('ap'))
+=======
+    },
+    {
+      title: "String startsWith()",
+      content: `console.log('apple'.startsWith('ap'))
  // prints true
  console.log('apple'.startsWith('bb'))
  // prints false
@@ -182,6 +253,23 @@ content: `let [a, b] = [3, 7]
 {
 title: "Destructuring Object",
 content: `let obj = {
+    },
+    {
+      title: "String repeat",
+      content: `console.log('ab'.repeat(3))
+ // prints "ababab"
+ `,
+    },
+    {
+      title: "Destructuring Array",
+      content: `let [a, b] = [3, 7]
+ console.log(a); // 3
+ console.log(b); // 7
+ `,
+    },
+    {
+      title: "Destructuring Object",
+      content: `let obj = {
   a: 55,
   b: 44
  };
@@ -193,6 +281,10 @@ content: `let obj = {
 {
 title: "Destructuring Nested Object",
 content: `const Person = {
+    },
+    {
+      title: "Destructuring Nested Object",
+      content: `const Person = {
   name: "Rahim Rahman",
   age: 24,
   sex: "male",
@@ -222,6 +314,16 @@ var isRaining = true;
 {
 title: "Array",
 content: `var items = ['bottle', 'mug', 'paper', 'pen'];
+    {
+      title: "Variable",
+      content: `var paperColor = white;
+var roastQuantity = 4;
+var isRaining = true;
+`,
+    },
+    {
+      title: "Array",
+      content: `var items = ['bottle', 'mug', 'paper', 'pen'];
 items.length; // -1
 items.indexOf('book'); // -1
 items.push('envelope');
@@ -237,6 +339,14 @@ content: `if (3 < 5) {  console.log("Yeah I will be executed!"); } `,
 {
 title: "If...else Statement",
 content: `var age = 21;
+    },
+    {
+      title: "If Statement",
+      content: `if (3 < 5) {  console.log("Yeah I will be executed!"); } `,
+    },
+    {
+      title: "If...else Statement",
+      content: `var age = 21;
 if (age > 18) {
  console.log('Now you are Adult');
 } else {
@@ -247,6 +357,9 @@ if (age > 18) {
 {
 title: "If...else if Statement",
 content: `var whatDay = 'Sunday';
+    {
+      title: "If...else if Statement",
+      content: `var whatDay = 'Sunday';
 if (age > 18) {
  console.log('Now you are Adult');
 } else {
@@ -255,6 +368,10 @@ if (age > 18) {
 {
 title: "If...else Statement",
 content: `var age = 21;
+    },
+    {
+      title: "If...else Statement",
+      content: `var age = 21;
 if (age > 18) {
  console.log('Now you are Adult');
 } else {
@@ -263,6 +380,11 @@ if (age > 18) {
 {
 title: "If...else Statement",
 content: `var age = 21;
+=======
+    },
+    {
+      title: "If...else Statement",
+      content: `var age = 21;
 if (age > 18) {
  console.log('Now you are Adult');
 } else {
@@ -272,6 +394,11 @@ if (age > 18) {
 {
 title: "Different ways to use addEventListener on a button",
 content: `// handle event using anonymous function
+=======
+    },
+    {
+      title: "Different ways to use addEventListener on a button",
+      content: `// handle event using anonymous function
 const greenButton = document.getElementById('make-green-button');
 // anonymous function
 greenButton.onclick = function () {   
@@ -371,6 +498,19 @@ document.getElementById('item-container').addEventListener('click', function(eve
 event.target.parentNode.removeChild(event.target);
 })`
 },
+=======
+    },
+    {
+      title: "Event Handlers",
+      content: `document.getElementById('id-name').addEventListener('event-name', function(event){
+// write your functionality as required
+})
+Example given below ->
+document.getElementById('delete-btn').addEventListener('click', function () {
+document.getElementById('secret-info').style.display = 'none';
+});
+we can use more event like - focus, blur, keydown, keyup, keypress, change etc`,
+    },
   ],
 };
 
