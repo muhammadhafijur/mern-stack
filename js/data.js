@@ -269,6 +269,17 @@ if (age > 18) {
  console.log('No you are not aged enough to be an Adult');
 }`,
     },
+    {
+      title: "Event Handlers",
+      content: `document.getElementById('id-name').addEventListener('event-name', function(event){
+// write your functionality as required
+})
+Example given below ->
+document.getElementById('delete-btn').addEventListener('click', function () {
+document.getElementById('secret-info').style.display = 'none';
+});
+we can use more event like - focus, blur, keydown, keyup, keypress, change etc`,
+    },
   ],
 };
 
