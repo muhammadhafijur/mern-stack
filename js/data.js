@@ -270,6 +270,34 @@ if (age > 18) {
 }`,
     },
     {
+      title: "Different ways to use addEventListener on a button",
+      content: `// handle event using anonymous function
+const greenButton = document.getElementById('make-green-button');
+// anonymous function
+greenButton.onclick = function () {   
+    document.body.style.backgroundColor = 'green';
+}
+
+// handle by using add eventlisenter
+const tealButton = document.getElementById('make-teal-button');
+tealButton.addEventListener('click', makeTeal);
+function makeTeal() {
+    document.body.style.backgroundColor = 'teal';
+}
+
+// addEventListener
+const orangeButton = document.getElementById('make-orange-button');
+orangeButton.addEventListener('click', function () {
+    document.body.style.backgroundColor = 'orange';
+})
+
+// direct shortcut
+document.getElementById('light-blue').addEventListener('click', function () {
+    document.body.style.backgroundColor = 'lightblue'
+})
+`,
+    },
+    {
       title: "Event Handlers",
       content: `document.getElementById('id-name').addEventListener('event-name', function(event){
 // write your functionality as required
