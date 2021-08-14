@@ -54,7 +54,7 @@ console.log(sum(2, 6)) // prints 8
       content: `const obj1 = {a: 1}
  const obj2 = {b: 2}
  const obj3 = Object.assign({},
-  &nbsp; obj1, obj2)
+   obj1, obj2)
  console.log(obj3)
  // { a: 1, b: 2 }
  `,
@@ -209,6 +209,65 @@ console.log(name, city, postal)
 // Rahim Rahman Rajshahi 6100
 console.log(city) // ReferenceError
  `,
+    },
+  ],
+  vanilla: [
+    {
+      title: "Variable",
+      content: `var paperColor = white;
+var roastQuantity = 4;
+var isRaining = true;
+`,
+    },
+    {
+      title: "Array",
+      content: `var items = ['bottle', 'mug', 'paper', 'pen'];
+items.length; // -1
+items.indexOf('book'); // -1
+items.push('envelope');
+items.pop('watch');
+items.unshift('keyboard');
+items.shift();
+`,
+    },
+    {
+      title: "If Statement",
+      content: `if (3 < 5) {  console.log("Yeah I will be executed!"); } `,
+    },
+    {
+      title: "If...else Statement",
+      content: `var age = 21;
+if (age > 18) {
+ console.log('Now you are Adult');
+} else {
+ console.log('No you are not aged enough to be an Adult');
+}`,
+    },
+
+    {
+      title: "If...else if Statement",
+      content: `var whatDay = 'Sunday';
+if (age > 18) {
+ console.log('Now you are Adult');
+} else {
+ console.log('No you are not aged enough to be an Adult');`,
+    },
+    {
+      title: "If...else Statement",
+      content: `var age = 21;
+if (age > 18) {
+ console.log('Now you are Adult');
+} else {
+ console.log('No you are not aged enough to be an Adult');`,
+    },
+    {
+      title: "If...else Statement",
+      content: `var age = 21;
+if (age > 18) {
+ console.log('Now you are Adult');
+} else {
+ console.log('No you are not aged enough to be an Adult');
+}`,
     },
   ],
 };

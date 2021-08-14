@@ -30,5 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const es6ContentElement = document.getElementById("es6-content");
   es6ContentElement.replaceWith(newContentForEs6);
 
+  const vanillaJsNewElement = createNewSection(data.vanilla);
+  const vanillaJsOldElement = document.getElementById("vanilla");
+  vanillaJsOldElement.replaceWith(vanillaJsNewElement);
+
   PR.prettyPrint();
 });
