@@ -270,7 +270,7 @@ if (age > 18) {
 }`,
     },
     {
-title: "If...else Statement",
+title: "Different ways to use addEventListener on a button",
 content: `// handle event using anonymous function
 const greenButton = document.getElementById('make-green-button');
 // anonymous function
