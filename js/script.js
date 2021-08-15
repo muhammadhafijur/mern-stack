@@ -10,6 +10,12 @@ function createNewSection(cardsContent) {
     cardContentElement.classList.add("card");
 
     const title = document.createElement("h2");
+    try {
+      item.title;
+      console.log(item.title);
+    } catch (err) {
+      console.log(item);
+    }
     title.innerText = item.title;
     cardContentElement.appendChild(title);
 
@@ -35,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   vanillaJsOldElement.replaceWith(vanillaJsNewElement);
 
   // testing
+  // console.log(data.dom);
   const domNewElement = createNewSection(data.dom);
   const domOldElement = document.getElementById("dom");
   domOldElement.replaceWith(domNewElement);
