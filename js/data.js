@@ -436,6 +436,15 @@ Item-1 clicked
 
 // Event Bubble(Module: 24-7) Ends
     },
+
+// Module: 25.3
+    {
+      title: "Redirect to Another Page Using JS",
+      content: `
+window.location.href = 'http://www.google.com';
+// This will take you to Google
+      `,
+    },
     
   ],
 };
