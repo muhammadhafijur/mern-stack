@@ -302,6 +302,144 @@ document.getElementById('secret-info').style.display = 'none';
 });
 we can use more event like - focus, blur, keydown, keyup, keypress, change etc`,
     },
+    
+// Module Summary(Module: 23-9) Starts 
+    
+    {
+      title: "Access for Tags and Implement styles",
+      content: `
+const variable = document.getElementsByTagName('p');
+//It will show all the paragraph tags
+
+variable.style.backgroundColor = 'steelblue';
+//sets background color to steelblue
+
+variable.style.color = 'white';
+//sets text color to white
+      `,
+    },
+    {
+      title: "Select a Specific Element, Set innerText & innerHTML",
+      content: `
+const variable = document.getElementById('element-id')
+//selects a specific element
+      
+variable.innerText ='Hi There';
+//sets inner text
+      
+variable.innerHTML = \`
+<h4>Thank you</h4>
+\`
+//sets innerHTML
+      `,
+    },
+    {
+      title: "Access Elements With Class & NodeList",
+      content: `
+const variable = document.getElementsByClassName
+('class-name');
+//access elements with class name
+
+document.querySelectorAll('p');
+//access elements with nodeLists
+      `,
+    },
+    {
+      title: "Remove an Element",
+      content: `
+const variable = document.getElementById('parent-element-id');
+const death = variable.children[4];
+variable.removeChild(death);
+//it will remove the 5th child element
+      `,
+    },
+    {
+      title: "Create Element",
+      content: `
+const friend = document.createElement('li');
+friend.innerText = "Hi There";
+const  friends = document.getElementById('friends');
+friends.appendChild(friend);
+      `,
+    },
+
+    // Module Summary(Module: 23-9) Ends
+   
+    // Event Bubble(Module: 24-7) Starts
+
+    {
+      title: "Event Bubble",
+      content: `
+<section id = "section-container">
+<h4>Event Bubble</h4>
+<ul id="list-container">
+    <li id="item-1">One</li>
+    <li id="item-2">Two</li>
+    <li id="item-3">Three</li>
+  </ul>
+</section>
+
+<script>    
+
+document.getElementById('item-3').addEventListener('click', function(event){
+&nbsp; console.log("Item-3 clicked");   
+});
+document.getElementById('list-container').addEventListener('click', function(){
+&nbsp; console.log("List Container clicked");
+});
+document.getElementById('section-container').addEventListener('click', function(){
+&nbsp; console.log("Section Container clicked");
+});
+</script>  
+/*
+If we click on any list item it will trigger it's parent and it's parent's parent too.
+In this case if we click on 'Three'(id="item-3") it will trigger not only it's parent "list-container" but also "section-container".It will show output like below:
+Item-3 clicked
+Section Container clicked
+List Container clicked
+*/ 
+      `,
+    },
+    {
+      title: "How to Stop Event Bubble",
+      content: `
+document.getElementById('item-2').addEventListener('click', function(event){
+console.log("Item-2 clicked");
+event.stopPropagation();
+});
+/*
+To stop this event bubble we need to use stopPropagation() with a parameter 'event' or 'e'.
+It stops it's parent item from getting triggered but it will trigger it's siblings.
+Here if we click 'Two' it will show output like below:
+Item-1 clicked
+Item-2 clicked
+Item-3 clicked 
+*/
+        
+        
+document.getElementById('item-1').addEventListener('click', function(event){
+console.log("Item-1 clicked");
+event.stopImmediatePropagation();
+});
+/*
+If we want to trigger only the item itself then we have to use stopImmediatePropagation() with a parameter 'event' or 'e'.
+Here if we click 'One' it will show output like below:
+Item-1 clicked
+*/
+`,
+
+// Event Bubble(Module: 24-7) Ends
+    },
+
+// Module: 25.3
+    {
+      title: "Redirect to Another Page Using JS",
+      content: `
+window.location.href = 'http://www.google.com';
+// This will take you to Google
+      `,
+    },
+    
   ],
   dom: [
     {
