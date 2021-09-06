@@ -20,7 +20,7 @@ h4{
     font-size: 27px;
 } */
 
-header{
+.header{
     height: 200px;
     display: flex;
     justify-content: flex-start;

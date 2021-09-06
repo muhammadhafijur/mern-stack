@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>MERN - Stack Cheatsheet</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- Font awesome kit -->
   <script src="https://kit.fontawesome.com/89d900d448.js" crossorigin="anonymous"></script>
   <!-- styles -->
@@ -16,16 +18,161 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="icons">
-      <div class="logo">
-        <a href="#"><i class="fab fa-js-square"></i></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">VanillaJS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ES6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DOM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">API</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="heading">
-      <h1>Javascript ES6 Cheat Sheet</h1>
+    </nav>
+    <!-- Heading Title -->
+    <div class="header">
+      <div class="icons">
+        <div class="logo">
+          <a href="#"><i class="fab fa-js-square"></i></a>
+        </div>
+      </div>
+      <div class="heading">
+        <h1>Javascript ES6 Cheat Sheet</h1>
+      </div>
     </div>
   </header>
 
+  <section class="container bg-dark text-light">
+    <div class="row ms-5">
+      <h1 class="py-4">JAVASCRIPT ARRAYS</h1>
+      <div class="col-lg-4">
+        <p>concat()</p>
+        <p>copyWithin()</p>
+        <p>indexOf()</p>
+        <p>includes()</p>
+        <p>join()</p>
+        <p>entries()</p>
+        <p>every()</p>
+        <p>fill()</p>
+        <p>filter()</p>
+        <p>find()</p>
+        <p>forEach()</p>
+        <p>from()</p>
+        <p>lastlndexOf()</p>
+        <p>pop()</p>
+        <p>push()</p>
+        <p>reverse()</p>
+        <p>reduce()</p>
+        <p>reduceRight()</p>
+        <p>shift()</p>
+        <p>slice()</p>
+        <p>sort()</p>
+        <p>splice()</p>
+        <p>unshift()</p>
+  </div>
+  <div class="col-lg-8">
+        <p>Join several arrays into one</p>
+        <p>Copy array elements within the array, to and from specified positions</p>
+        <p>Return the primitive value of the specified object</p>
+        <p>Check if an array contains the specified element</p>
+        <p>Combine elements of an array into a single string and return the string</p>
+        <p>Return a key/value pair Array Iteration Object</p>
+        <p>Check if every element in an array passes a test</p>
+        <p>Fill the elements in an array with a static value</p>
+        <p>Create a new array with every element in an array that pass a test</p>
+        <p>Return the value of the first element in an array that pass a test</p>
+        <p>Call a function for each array element</p>
+        <p>Create an array from an object</p>
+        <p>Give the last position at which a given element appears in an array</p>
+        <p>Remove the last element of an array</p>
+        <p>Add a new element at the end</p>
+        <p>Sort elements in descending order</p>
+        <p>Reduce the values of an array to a single value (going left-to-right)</p>
+        <p>Reduce the values of an array to a single value (going right-to-left)</p>
+        <p>Remove the first element of an array</p>
+        <p>Pull a copy of a portion of an array into a new array object</p>
+        <p>Sort elements alphabetically</p>
+        <p>Add elements in a specified way and position</p>
+        <p>Add a new element to the beginning</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="container bg-dark text-light my-3">
+    <div class="row ms-5">
+      <h1 class="py-4">JAVASCRIPT BOOLEAN METHOD</h1>
+      <div class="col-lg-4">
+        <p>toString()</p> 
+        <p>valueOf()</p>
+        <p>toSource()</p>
+  </div>
+  <div class="col-lg-8">
+        <p>Convert a Boolean value to a string, and return the result</p>   
+        <p>Return the first position at which a given element appears in an array</p>
+        <p>Return a string representing the source code of the object</p>
+    </div>
+    </div>
+  </section>
+  <!-- 3 -->
+  <section class="container bg-dark text-light">
+    <div class="row ms-5">
+      <h1 class="py-4">JAVASCRIPT ARITHMETIC OPERATORS</h1>
+      <div class="col-lg-4">
+        <p>+</p>
+        <p>_</p>
+        <p>*</p>
+        <p>/</p>
+        <p>(...)
+        <p>%</p>
+        <p>++</p>
+        <p>--</p>
+        <p>==</p>
+        <p>===</p>
+        <p>!=</p>
+        <p>!==</p>
+        <p>></p>
+        <p><</p>
+        <p>>=</p>
+        <p><=</p>
+        <p>?</p>
+  </div>
+  <div class="col-lg-8">
+    <p>Addition</p>
+    <p>Subtraction</p>
+    <p>Multiplication</p>
+    <p>Division</p>
+    <p>Grouping operator (operations within brackets are executed(earlier than those outside)</p>
+    <p>Modulus (remainder)</p>
+    <p>Increment numbers</p>
+    <p>Decrement numbers</p>
+    <p>Equal to</p>
+    <p>Equal value and equal type</p>
+    <p>Not equal</p>
+    <p>Not equal value or not equal type</p>
+    <p>Greater than</p>
+    <p>Lesser than</p>
+    <p>Greater than or equal to</p>
+    <p>Lesser than or equal to</p>
+    <p>Ternary operator</p>
+    </div>
+    </div>
+  </section>
+
+  
   <section id="es6-content"></section>
 
   <!-- DOM SECTION -->
@@ -73,6 +220,8 @@
   </footer>
 
   <!-- script files -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="js/run_prettify.js"></script>
   <script type="module" src="js/script.js"></script>
 </body>
